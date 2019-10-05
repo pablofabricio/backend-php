@@ -8,6 +8,6 @@
     <body>
         
         <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand">você esta logado na conta: <?php echo $logged->type;?> - <?php echo $logged->id; ?></a>
-            <a class="navbar-brand" href="main/deposit">Seu saldo é: <?php echo $logged->balance; ?></a>
+            <a class="navbar-brand">você esta logado na conta: <?php echo $account1->type;?> - <?php echo $account1->id; ?></a>
+            <a class="navbar-brand">Seu saldo é: <?php echo $account1->balance; ?></a>
         </nav>

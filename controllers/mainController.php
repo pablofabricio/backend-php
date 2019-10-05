@@ -3,7 +3,7 @@ class mainController extends controller {
 
 	public $data = array();
 	
-	//this method will work as a database.
+	//this method is working as a database.
 	public function loadData() {
 		$account1 = new Account(1, 'Poupança', 1000);
 		$account2 = new Account(2, 'Poupança', 500);
@@ -19,10 +19,6 @@ class mainController extends controller {
 		$this->data['account4'] = $account4;
 		$this->data['account5'] = $account5;
 		$this->data['account6'] = $account6;
-
-		//sorteando alguma conta para logar
-		$num = rand(1, 5);
-		$this->data['logged'] = $this->data['account'.$num];
 	}
 	
 	public function index() {
@@ -30,14 +26,8 @@ class mainController extends controller {
 		$this->loadData();
 		$this->loadTemplate('header', $this->data);
 		$this->loadView('home', $this->data);
+		$this->loadTemplate('footer', $this->data);
 		
-		
-	}
-
-	public function deposit(){
-		$this->loadData();
-		$this->loadTemplate('header', $this->data);
-
 	}
 
 }
