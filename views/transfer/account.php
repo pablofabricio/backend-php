@@ -1,7 +1,6 @@
 <br>
-<h3>Escolha a conta de destino do depósito: </h3>
+<h3>Escolha a conta de destino para a transferência: </h3>
 <br>
-<a href="<?php echo $value; ?>/1"><button type="button" class="btn btn-secondary">conta 1</button></a>
 <a href="<?php echo $value; ?>/2"><button type="button" class="btn btn-secondary">conta 2</button></a>
 <a href="<?php echo $value; ?>/3"><button type="button" class="btn btn-secondary">conta 3</button></a>
 <a href="<?php echo $value; ?>/4"><button type="button" class="btn btn-secondary">conta 4</button></a>
